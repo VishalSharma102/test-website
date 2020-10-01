@@ -1,0 +1,244 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner img{
+    display: block;
+    max-width:96%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+.tn-header{
+    background:#fff;
+}
+body{
+    background:#fff;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.tn-nav{
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 96%;
+    padding: 20px; /* Some padding */
+}
+.tn-nav ul li{
+    display:inline-block;
+    padding-top: 35px;
+    font-size: 150%;
+
+}
+
+.tn-nav ul li a{
+    padding: 10px 10px;
+    text-decoration:none;
+    color:#fff;
+}
+
+.tn-nav ul li a:hover{
+    color:#fff;
+    opacity:0.6;
+}
+/* Media Queries
+--------------------------------------------- */
+@media(max-width: 991px) {
+    nav a {
+        font-size: 14px;
+    }
+    .toggle{
+        display: none;
+    }
+}
+
+@media all and (max-width : 736px) {
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+
+    .toggle+a,
+    .menu {
+        display:none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 8px 14px;
+        font-size: 15px;
+        text-decoration: none;
+        border: none;
+        background-color: rgba(255, 253, 253, 0.13);
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+        max-width: 80px;
+        margin: 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.23);
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        max-width: 120px;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked+ul {
+        display: block;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+    /* 
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #212121;
+    } */
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #fff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+
+    nav a {
+        color: #fff;
+        font-size: 14px;
+        padding: 0;
+        background: none;
+        border: none;
+        margin: 8px 0;
+        letter-spacing: 1px;
+    }
+
+    nav ul ul li a {
+        color: #000;
+    }
+
+    nav ul ul li a {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+/* about */
+
+.about{
+    display: block;
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-right {
+    display: inline;
+}
+.about-left{
+    display: inline;
+}
+.mb-3{
+    display: inline;
+}
+
+.about h3 {
+    display: inline;
+    font-size: 34px;
+    color: #000;
+}
+
+.about-right p {
+    display: inline;
+    color: #6b6a6a;
+    font-size: 16px;
+
+}
+
+a.button-style-3 {
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 13px 22px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+/* //about */
